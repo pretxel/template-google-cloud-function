@@ -1,0 +1,35 @@
+{
+  "name": "google-nodejs-cf",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edsel Serrano",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/datastore": "^1.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "source-map-support": "^0.5.6",
+    "jsonschema": "^1.2.4"
+  },
+  "devDependencies": {
+    "babel-plugin-source-map-support": "^2.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "serverless": "^1.26.1",
+    "serverless-google-cloudfunctions": "^1.1.0",
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^3.11.0",
+    "webpack-node-externals": "^1.5.4"
+  }
+}

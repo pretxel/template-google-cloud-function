@@ -1,0 +1,30 @@
+service: cf-hello-world
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+    packagePath: ./package.json
+
+provider:
+  name: google
+  runtime: nodejs
+  project: own-project
+  credentials: ~/.gcloud/keyfile.json
+
+plugins:
+  - serverless-webpack
+  - serverless-google-cloudfunctions
+
+
+package:
+  exclude:
+    - node_modules/**
+    - .gitignore
+    - .git/**
+
+functions:
+  helloWorldCF:
+    handler: helloWorldCF
+    events:
+      - http: path
